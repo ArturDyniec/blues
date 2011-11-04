@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>phpDocumentor Parser Errors and Warnings</title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+						<a href="#Post-parsing">Post-parsing</a><br>
+<a href="#Artist.class.php">Artist.class.php</a><br>
+<a href="#ArtistForm.class.php">ArtistForm.class.php</a><br>
+<a href="#ArtistFormFilter.class.php">ArtistFormFilter.class.php</a><br>
+<a href="#artistGeneratorConfiguration.class.php">artistGeneratorConfiguration.class.php</a><br>
+<a href="#artistGeneratorHelper.class.php">artistGeneratorHelper.class.php</a><br>
+<a href="#ArtistSong.class.php">ArtistSong.class.php</a><br>
+<a href="#ArtistSongForm.class.php">ArtistSongForm.class.php</a><br>
+<a href="#ArtistSongFormFilter.class.php">ArtistSongFormFilter.class.php</a><br>
+<a href="#ArtistSongTable.class.php">ArtistSongTable.class.php</a><br>
+<a href="#ArtistTable.class.php">ArtistTable.class.php</a><br>
+<a href="#backendConfiguration.class.php">backendConfiguration.class.php</a><br>
+<a href="#BaseArtist.class.php">BaseArtist.class.php</a><br>
+<a href="#BaseArtistForm.class.php">BaseArtistForm.class.php</a><br>
+<a href="#BaseArtistFormFilter.class.php">BaseArtistFormFilter.class.php</a><br>
+<a href="#BaseArtistSong.class.php">BaseArtistSong.class.php</a><br>
+<a href="#BaseArtistSongForm.class.php">BaseArtistSongForm.class.php</a><br>
+<a href="#BaseArtistSongFormFilter.class.php">BaseArtistSongFormFilter.class.php</a><br>
+<a href="#BaseClip.class.php">BaseClip.class.php</a><br>
+<a href="#BaseClipForm.class.php">BaseClipForm.class.php</a><br>
+<a href="#BaseClipFormFilter.class.php">BaseClipFormFilter.class.php</a><br>
+<a href="#BaseForm.class.php">BaseForm.class.php</a><br>
+<a href="#BaseFormDoctrine.class.php">BaseFormDoctrine.class.php</a><br>
+<a href="#BaseFormFilterDoctrine.class.php">BaseFormFilterDoctrine.class.php</a><br>
+<a href="#BasePriority.class.php">BasePriority.class.php</a><br>
+<a href="#BasePriorityForm.class.php">BasePriorityForm.class.php</a><br>
+<a href="#BasesfGuardForgotPassword.class.php">BasesfGuardForgotPassword.class.php</a><br>
+<a href="#BasesfGuardGroup.class.php">BasesfGuardGroup.class.php</a><br>
+<a href="#BasesfGuardGroupForm.class.php">BasesfGuardGroupForm.class.php</a><br>
+<a href="#BasesfGuardGroupFormFilter.class.php">BasesfGuardGroupFormFilter.class.php</a><br>
+<a href="#BasesfGuardGroupPermission.class.php">BasesfGuardGroupPermission.class.php</a><br>
+<a href="#BasesfGuardPermission.class.php">BasesfGuardPermission.class.php</a><br>
+<a href="#BasesfGuardPermissionForm.class.php">BasesfGuardPermissionForm.class.php</a><br>
+<a href="#BasesfGuardPermissionFormFilter.class.php">BasesfGuardPermissionFormFilter.class.php</a><br>
+<a href="#BasesfGuardRememberKey.class.php">BasesfGuardRememberKey.class.php</a><br>
+<a href="#BasesfGuardUser.class.php">BasesfGuardUser.class.php</a><br>
+<a href="#BasesfGuardUserForm.class.php">BasesfGuardUserForm.class.php</a><br>
+<a href="#BasesfGuardUserFormFilter.class.php">BasesfGuardUserFormFilter.class.php</a><br>
+<a href="#BasesfGuardUserGroup.class.php">BasesfGuardUserGroup.class.php</a><br>
+<a href="#BasesfGuardUserPermission.class.php">BasesfGuardUserPermission.class.php</a><br>
+<a href="#BaseSong.class.php">BaseSong.class.php</a><br>
+<a href="#BaseSongForm.class.php">BaseSongForm.class.php</a><br>
+<a href="#BaseSongFormFilter.class.php">BaseSongFormFilter.class.php</a><br>
+<a href="#BaseTasks.class.php">BaseTasks.class.php</a><br>
+<a href="#BaseTasksForm.class.php">BaseTasksForm.class.php</a><br>
+<a href="#Clip.class.php">Clip.class.php</a><br>
+<a href="#ClipForm.class.php">ClipForm.class.php</a><br>
+<a href="#ClipFormFilter.class.php">ClipFormFilter.class.php</a><br>
+<a href="#clipGeneratorConfiguration.class.php">clipGeneratorConfiguration.class.php</a><br>
+<a href="#clipGeneratorHelper.class.php">clipGeneratorHelper.class.php</a><br>
+<a href="#ClipTable.class.php">ClipTable.class.php</a><br>
+<a href="#frontendConfiguration.class.php">frontendConfiguration.class.php</a><br>
+<a href="#myUser.class.php">myUser.class.php</a><br>
+<a href="#Priority.class.php">Priority.class.php</a><br>
+<a href="#PriorityForm.class.php">PriorityForm.class.php</a><br>
+<a href="#PriorityTable.class.php">PriorityTable.class.php</a><br>
+<a href="#ProjectConfiguration.class.php">ProjectConfiguration.class.php</a><br>
+<a href="#sfGuardForgotPassword.class.php">sfGuardForgotPassword.class.php</a><br>
+<a href="#sfGuardForgotPasswordTable.class.php">sfGuardForgotPasswordTable.class.php</a><br>
+<a href="#sfGuardGroup.class.php">sfGuardGroup.class.php</a><br>
+<a href="#sfGuardGroupForm.class.php">sfGuardGroupForm.class.php</a><br>
+<a href="#sfGuardGroupFormFilter.class.php">sfGuardGroupFormFilter.class.php</a><br>
+<a href="#sfGuardGroupPermission.class.php">sfGuardGroupPermission.class.php</a><br>
+<a href="#sfGuardGroupPermissionTable.class.php">sfGuardGroupPermissionTable.class.php</a><br>
+<a href="#sfGuardGroupTable.class.php">sfGuardGroupTable.class.php</a><br>
+<a href="#sfGuardPermission.class.php">sfGuardPermission.class.php</a><br>
+<a href="#sfGuardPermissionForm.class.php">sfGuardPermissionForm.class.php</a><br>
+<a href="#sfGuardPermissionFormFilter.class.php">sfGuardPermissionFormFilter.class.php</a><br>
+<a href="#sfGuardPermissionTable.class.php">sfGuardPermissionTable.class.php</a><br>
+<a href="#sfGuardRememberKey.class.php">sfGuardRememberKey.class.php</a><br>
+<a href="#sfGuardRememberKeyTable.class.php">sfGuardRememberKeyTable.class.php</a><br>
+<a href="#sfGuardUser.class.php">sfGuardUser.class.php</a><br>
+<a href="#sfGuardUserForm.class.php">sfGuardUserForm.class.php</a><br>
+<a href="#sfGuardUserFormFilter.class.php">sfGuardUserFormFilter.class.php</a><br>
+<a href="#sfGuardUserGroup.class.php">sfGuardUserGroup.class.php</a><br>
+<a href="#sfGuardUserGroupTable.class.php">sfGuardUserGroupTable.class.php</a><br>
+<a href="#sfGuardUserPermission.class.php">sfGuardUserPermission.class.php</a><br>
+<a href="#sfGuardUserPermissionTable.class.php">sfGuardUserPermissionTable.class.php</a><br>
+<a href="#sfGuardUserTable.class.php">sfGuardUserTable.class.php</a><br>
+<a href="#Song.class.php">Song.class.php</a><br>
+<a href="#SongForm.class.php">SongForm.class.php</a><br>
+<a href="#SongFormFilter.class.php">SongFormFilter.class.php</a><br>
+<a href="#songGeneratorConfiguration.class.php">songGeneratorConfiguration.class.php</a><br>
+<a href="#songGeneratorHelper.class.php">songGeneratorHelper.class.php</a><br>
+<a href="#SongTable.class.php">SongTable.class.php</a><br>
+<a href="#Tasks.class.php">Tasks.class.php</a><br>
+<a href="#TasksForm.class.php">TasksForm.class.php</a><br>
+<a href="#TasksTable.class.php">TasksTable.class.php</a><br>
+<a name="Post-parsing"></a>
+<h1>Post-parsing</h1>
+<h2>Warnings:</h2><br>
+<b>Warning</b> - Class BaseArtist parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class sfGuardRememberKey parent PluginsfGuardRememberKey not found<br>
+<b>Warning</b> - Class clipActions parent autoClipActions not found<br>
+<b>Warning</b> - Class clipGeneratorConfiguration parent BaseClipGeneratorConfiguration not found<br>
+<b>Warning</b> - Class artistGeneratorHelper parent BaseArtistGeneratorHelper not found<br>
+<b>Warning</b> - Class artistGeneratorConfiguration parent BaseArtistGeneratorConfiguration not found<br>
+<b>Warning</b> - Class sfGuardGroupPermissionTable parent PluginsfGuardGroupPermissionTable not found<br>
+<b>Warning</b> - Class backendConfiguration parent sfApplicationConfiguration not found<br>
+<b>Warning</b> - Class myUser parent sfGuardSecurityUser not found<br>
+<b>Warning</b> - Class artistActions parent autoArtistActions not found<br>
+<b>Warning</b> - Class clipGeneratorHelper parent BaseClipGeneratorHelper not found<br>
+<b>Warning</b> - Class songActions parent autoSongActions not found<br>
+<b>Warning</b> - Class BasesfGuardUserPermission parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class sfGuardForgotPassword parent PluginsfGuardForgotPassword not found<br>
+<b>Warning</b> - Class toolsActions parent sfActions not found<br>
+<b>Warning</b> - Class frontendConfiguration parent sfApplicationConfiguration not found<br>
+<b>Warning</b> - Class sfGuardPermissionTable parent PluginsfGuardPermissionTable not found<br>
+<b>Warning</b> - Class sfGuardRememberKeyTable parent PluginsfGuardRememberKeyTable not found<br>
+<b>Warning</b> - Class Tasks parent PluginTasks not found<br>
+<b>Warning</b> - Class TasksTable parent PluginTasksTable not found<br>
+<b>Warning</b> - Class songGeneratorConfiguration parent BaseSongGeneratorConfiguration not found<br>
+<b>Warning</b> - Class songGeneratorHelper parent BaseSongGeneratorHelper not found<br>
+<b>Warning</b> - Class sfGuardGroupTable parent PluginsfGuardGroupTable not found<br>
+<b>Warning</b> - Class sfGuardGroupPermission parent PluginsfGuardGroupPermission not found<br>
+<b>Warning</b> - Class sfGuardUserTable parent PluginsfGuardUserTable not found<br>
+<b>Warning</b> - Class BasePriority parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BaseTasks parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class Priority parent PluginPriority not found<br>
+<b>Warning</b> - Class sfGuardUserPermissionTable parent PluginsfGuardUserPermissionTable not found<br>
+<b>Warning</b> - Class sfGuardUserPermission parent PluginsfGuardUserPermission not found<br>
+<b>Warning</b> - Class sfGuardPermission parent PluginsfGuardPermission not found<br>
+<b>Warning</b> - Class sfGuardUser parent PluginsfGuardUser not found<br>
+<b>Warning</b> - Class sfGuardUserGroup parent PluginsfGuardUserGroup not found<br>
+<b>Warning</b> - Class sfGuardUserGroupTable parent PluginsfGuardUserGroupTable not found<br>
+<b>Warning</b> - Class PriorityTable parent PluginPriorityTable not found<br>
+<b>Warning</b> - Class BaseArtistSong parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BasesfGuardPermission parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BasesfGuardRememberKey parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BasesfGuardUser parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BasesfGuardUserGroup parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BasesfGuardGroupPermission parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BasesfGuardGroup parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BaseClip parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class BaseSong parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class ClipTable parent Doctrine_Table not found<br>
+<b>Warning</b> - Class BasesfGuardForgotPassword parent sfDoctrineRecord not found<br>
+<b>Warning</b> - Class myUser parent sfGuardSecurityUser not found<br>
+<b>Warning</b> - Class SongTable parent Doctrine_Table not found<br>
+<b>Warning</b> - Class ArtistSongTable parent Doctrine_Table not found<br>
+<b>Warning</b> - Class sfGuardPermissionFormFilter parent PluginsfGuardPermissionFormFilter not found<br>
+<b>Warning</b> - Class artistActions parent sfActions not found<br>
+<b>Warning</b> - Class BaseFormFilterDoctrine parent sfFormFilterDoctrine not found<br>
+<b>Warning</b> - Class ProjectConfiguration parent sfProjectConfiguration not found<br>
+<b>Warning</b> - Class sfGuardForgotPasswordTable parent PluginsfGuardForgotPasswordTable not found<br>
+<b>Warning</b> - Class sfGuardGroup parent PluginsfGuardGroup not found<br>
+<b>Warning</b> - Class songActions parent sfActions not found<br>
+<b>Warning</b> - Class sfGuardUserFormFilter parent PluginsfGuardUserFormFilter not found<br>
+<b>Warning</b> - Class BaseForm parent sfFormSymfony not found<br>
+<b>Warning</b> - 
+duplicate class element "songActions" in file C:\xampp\htdocs\blues\apps\frontend\modules\song\actions\actions.class.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class PriorityForm parent PluginPriorityForm not found<br>
+<b>Warning</b> - Class TasksForm parent PluginTasksForm not found<br>
+<b>Warning</b> - 
+duplicate class element "clipActions" in file C:\xampp\htdocs\blues\apps\frontend\modules\clip\actions\actions.class.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class sfGuardUserForm parent PluginsfGuardUserForm not found<br>
+<b>Warning</b> - Class BaseFormDoctrine parent sfFormDoctrine not found<br>
+<b>Warning</b> - Class sfGuardGroupForm parent PluginsfGuardGroupForm not found<br>
+<b>Warning</b> - Class sfGuardPermissionForm parent PluginsfGuardPermissionForm not found<br>
+<b>Warning</b> - 
+duplicate class element "artistActions" in file C:\xampp\htdocs\blues\apps\frontend\modules\artist\actions\actions.class.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class sfGuardGroupFormFilter parent PluginsfGuardGroupFormFilter not found<br>
+<b>Warning</b> - Class ArtistTable parent Doctrine_Table not found<br>
+<b>Warning</b> - Class clipActions parent sfActions not found<br>
+<b>Warning</b> - 
+duplicate class element "myUser" in file C:\xampp\htdocs\blues\apps\frontend\lib\myUser.class.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<a name="actions.class.php"></a>
+<h1>actions.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "clipActions", use another DocBlock to document the file<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "songActions", use another DocBlock to document the file<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "toolsActions", use another DocBlock to document the file<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "artistActions", use another DocBlock to document the file<br>
+<b>Warning on line 15</b> - File "C:\xampp\htdocs\blues\apps\backend\modules\artist\actions\actions.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 15</b> - File "C:\xampp\htdocs\blues\apps\backend\modules\song\actions\actions.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 15</b> - File "C:\xampp\htdocs\blues\apps\backend\modules\clip\actions\actions.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Artist.class.php"></a>
+<h1>Artist.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "Artist", use another DocBlock to document the file<br>
+<a name="ArtistForm.class.php"></a>
+<h1>ArtistForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ArtistForm", use another DocBlock to document the file<br>
+<a name="ArtistFormFilter.class.php"></a>
+<h1>ArtistFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ArtistFormFilter", use another DocBlock to document the file<br>
+<a name="artistGeneratorConfiguration.class.php"></a>
+<h1>artistGeneratorConfiguration.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "artistGeneratorConfiguration", use another DocBlock to document the file<br>
+<a name="artistGeneratorHelper.class.php"></a>
+<h1>artistGeneratorHelper.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "artistGeneratorHelper", use another DocBlock to document the file<br>
+<a name="ArtistSong.class.php"></a>
+<h1>ArtistSong.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "ArtistSong", use another DocBlock to document the file<br>
+<a name="ArtistSongForm.class.php"></a>
+<h1>ArtistSongForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ArtistSongForm", use another DocBlock to document the file<br>
+<a name="ArtistSongFormFilter.class.php"></a>
+<h1>ArtistSongFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ArtistSongFormFilter", use another DocBlock to document the file<br>
+<a name="ArtistSongTable.class.php"></a>
+<h1>ArtistSongTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class ArtistSongTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\ArtistSongTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ArtistTable.class.php"></a>
+<h1>ArtistTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class ArtistTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\ArtistTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="backendConfiguration.class.php"></a>
+<h1>backendConfiguration.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class backendConfiguration<br>
+<b>Warning on line 8</b> - File "C:\xampp\htdocs\blues\apps\backend\config\backendConfiguration.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="BaseArtist.class.php"></a>
+<h1>BaseArtist.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - DocBlock would be page-level, but precedes class "BaseArtist", use another DocBlock to document the file<br>
+<a name="BaseArtistForm.class.php"></a>
+<h1>BaseArtistForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BaseArtistForm", use another DocBlock to document the file<br>
+<a name="BaseArtistFormFilter.class.php"></a>
+<h1>BaseArtistFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseArtistFormFilter", use another DocBlock to document the file<br>
+<a name="BaseArtistSong.class.php"></a>
+<h1>BaseArtistSong.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 27</b> - DocBlock would be page-level, but precedes class "BaseArtistSong", use another DocBlock to document the file<br>
+<a name="BaseArtistSongForm.class.php"></a>
+<h1>BaseArtistSongForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BaseArtistSongForm", use another DocBlock to document the file<br>
+<a name="BaseArtistSongFormFilter.class.php"></a>
+<h1>BaseArtistSongFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseArtistSongFormFilter", use another DocBlock to document the file<br>
+<a name="BaseClip.class.php"></a>
+<h1>BaseClip.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 36</b> - DocBlock would be page-level, but precedes class "BaseClip", use another DocBlock to document the file<br>
+<a name="BaseClipForm.class.php"></a>
+<h1>BaseClipForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BaseClipForm", use another DocBlock to document the file<br>
+<a name="BaseClipFormFilter.class.php"></a>
+<h1>BaseClipFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseClipFormFilter", use another DocBlock to document the file<br>
+<a name="BaseForm.class.php"></a>
+<h1>BaseForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseForm", use another DocBlock to document the file<br>
+<a name="BaseFormDoctrine.class.php"></a>
+<h1>BaseFormDoctrine.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseFormDoctrine", use another DocBlock to document the file<br>
+<a name="BaseFormFilterDoctrine.class.php"></a>
+<h1>BaseFormFilterDoctrine.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseFormFilterDoctrine", use another DocBlock to document the file<br>
+<a name="BasePriority.class.php"></a>
+<h1>BasePriority.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 21</b> - DocBlock would be page-level, but precedes class "BasePriority", use another DocBlock to document the file<br>
+<a name="BasePriorityForm.class.php"></a>
+<h1>BasePriorityForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BasePriorityForm", use another DocBlock to document the file<br>
+<a name="BasesfGuardForgotPassword.class.php"></a>
+<h1>BasesfGuardForgotPassword.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 27</b> - DocBlock would be page-level, but precedes class "BasesfGuardForgotPassword", use another DocBlock to document the file<br>
+<a name="BasesfGuardGroup.class.php"></a>
+<h1>BasesfGuardGroup.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 33</b> - DocBlock would be page-level, but precedes class "BasesfGuardGroup", use another DocBlock to document the file<br>
+<a name="BasesfGuardGroupForm.class.php"></a>
+<h1>BasesfGuardGroupForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BasesfGuardGroupForm", use another DocBlock to document the file<br>
+<a name="BasesfGuardGroupFormFilter.class.php"></a>
+<h1>BasesfGuardGroupFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BasesfGuardGroupFormFilter", use another DocBlock to document the file<br>
+<a name="BasesfGuardGroupPermission.class.php"></a>
+<h1>BasesfGuardGroupPermission.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 27</b> - DocBlock would be page-level, but precedes class "BasesfGuardGroupPermission", use another DocBlock to document the file<br>
+<a name="BasesfGuardPermission.class.php"></a>
+<h1>BasesfGuardPermission.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 33</b> - DocBlock would be page-level, but precedes class "BasesfGuardPermission", use another DocBlock to document the file<br>
+<a name="BasesfGuardPermissionForm.class.php"></a>
+<h1>BasesfGuardPermissionForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BasesfGuardPermissionForm", use another DocBlock to document the file<br>
+<a name="BasesfGuardPermissionFormFilter.class.php"></a>
+<h1>BasesfGuardPermissionFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BasesfGuardPermissionFormFilter", use another DocBlock to document the file<br>
+<a name="BasesfGuardRememberKey.class.php"></a>
+<h1>BasesfGuardRememberKey.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 27</b> - DocBlock would be page-level, but precedes class "BasesfGuardRememberKey", use another DocBlock to document the file<br>
+<a name="BasesfGuardUser.class.php"></a>
+<h1>BasesfGuardUser.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 66</b> - DocBlock would be page-level, but precedes class "BasesfGuardUser", use another DocBlock to document the file<br>
+<a name="BasesfGuardUserForm.class.php"></a>
+<h1>BasesfGuardUserForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BasesfGuardUserForm", use another DocBlock to document the file<br>
+<a name="BasesfGuardUserFormFilter.class.php"></a>
+<h1>BasesfGuardUserFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BasesfGuardUserFormFilter", use another DocBlock to document the file<br>
+<a name="BasesfGuardUserGroup.class.php"></a>
+<h1>BasesfGuardUserGroup.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 27</b> - DocBlock would be page-level, but precedes class "BasesfGuardUserGroup", use another DocBlock to document the file<br>
+<a name="BasesfGuardUserPermission.class.php"></a>
+<h1>BasesfGuardUserPermission.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 27</b> - DocBlock would be page-level, but precedes class "BasesfGuardUserPermission", use another DocBlock to document the file<br>
+<a name="BaseSong.class.php"></a>
+<h1>BaseSong.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 30</b> - DocBlock would be page-level, but precedes class "BaseSong", use another DocBlock to document the file<br>
+<a name="BaseSongForm.class.php"></a>
+<h1>BaseSongForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BaseSongForm", use another DocBlock to document the file<br>
+<a name="BaseSongFormFilter.class.php"></a>
+<h1>BaseSongFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "BaseSongFormFilter", use another DocBlock to document the file<br>
+<a name="BaseTasks.class.php"></a>
+<h1>BaseTasks.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 33</b> - DocBlock would be page-level, but precedes class "BaseTasks", use another DocBlock to document the file<br>
+<a name="BaseTasksForm.class.php"></a>
+<h1>BaseTasksForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "BaseTasksForm", use another DocBlock to document the file<br>
+<a name="Clip.class.php"></a>
+<h1>Clip.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "Clip", use another DocBlock to document the file<br>
+<a name="ClipForm.class.php"></a>
+<h1>ClipForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ClipForm", use another DocBlock to document the file<br>
+<a name="ClipFormFilter.class.php"></a>
+<h1>ClipFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ClipFormFilter", use another DocBlock to document the file<br>
+<a name="clipGeneratorConfiguration.class.php"></a>
+<h1>clipGeneratorConfiguration.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "clipGeneratorConfiguration", use another DocBlock to document the file<br>
+<a name="clipGeneratorHelper.class.php"></a>
+<h1>clipGeneratorHelper.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "clipGeneratorHelper", use another DocBlock to document the file<br>
+<a name="ClipTable.class.php"></a>
+<h1>ClipTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class ClipTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\ClipTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="frontendConfiguration.class.php"></a>
+<h1>frontendConfiguration.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 3</b> - no @package tag was used in a DocBlock for class frontendConfiguration<br>
+<b>Warning on line 7</b> - File "C:\xampp\htdocs\blues\apps\frontend\config\frontendConfiguration.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="myUser.class.php"></a>
+<h1>myUser.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 3</b> - no @package tag was used in a DocBlock for class myUser<br>
+<b>Warning on line 3</b> - no @package tag was used in a DocBlock for class myUser<br>
+<b>Warning on line 4</b> - File "C:\xampp\htdocs\blues\apps\frontend\lib\myUser.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 4</b> - File "C:\xampp\htdocs\blues\apps\backend\lib\myUser.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Priority.class.php"></a>
+<h1>Priority.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "Priority", use another DocBlock to document the file<br>
+<a name="PriorityForm.class.php"></a>
+<h1>PriorityForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "PriorityForm", use another DocBlock to document the file<br>
+<a name="PriorityTable.class.php"></a>
+<h1>PriorityTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class PriorityTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfTodoPlugin\PriorityTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectConfiguration.class.php"></a>
+<h1>ProjectConfiguration.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectConfiguration<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\config\ProjectConfiguration.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardForgotPassword.class.php"></a>
+<h1>sfGuardForgotPassword.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardForgotPassword", use another DocBlock to document the file<br>
+<a name="sfGuardForgotPasswordTable.class.php"></a>
+<h1>sfGuardForgotPasswordTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardForgotPasswordTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardForgotPasswordTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardGroup.class.php"></a>
+<h1>sfGuardGroup.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardGroup", use another DocBlock to document the file<br>
+<a name="sfGuardGroupForm.class.php"></a>
+<h1>sfGuardGroupForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sfGuardGroupForm", use another DocBlock to document the file<br>
+<a name="sfGuardGroupFormFilter.class.php"></a>
+<h1>sfGuardGroupFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sfGuardGroupFormFilter", use another DocBlock to document the file<br>
+<a name="sfGuardGroupPermission.class.php"></a>
+<h1>sfGuardGroupPermission.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardGroupPermission", use another DocBlock to document the file<br>
+<a name="sfGuardGroupPermissionTable.class.php"></a>
+<h1>sfGuardGroupPermissionTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardGroupPermissionTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardGroupPermissionTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardGroupTable.class.php"></a>
+<h1>sfGuardGroupTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardGroupTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardGroupTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardPermission.class.php"></a>
+<h1>sfGuardPermission.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardPermission", use another DocBlock to document the file<br>
+<a name="sfGuardPermissionForm.class.php"></a>
+<h1>sfGuardPermissionForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sfGuardPermissionForm", use another DocBlock to document the file<br>
+<a name="sfGuardPermissionFormFilter.class.php"></a>
+<h1>sfGuardPermissionFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sfGuardPermissionFormFilter", use another DocBlock to document the file<br>
+<a name="sfGuardPermissionTable.class.php"></a>
+<h1>sfGuardPermissionTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardPermissionTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardPermissionTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardRememberKey.class.php"></a>
+<h1>sfGuardRememberKey.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardRememberKey", use another DocBlock to document the file<br>
+<a name="sfGuardRememberKeyTable.class.php"></a>
+<h1>sfGuardRememberKeyTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardRememberKeyTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardRememberKeyTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardUser.class.php"></a>
+<h1>sfGuardUser.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardUser", use another DocBlock to document the file<br>
+<a name="sfGuardUserForm.class.php"></a>
+<h1>sfGuardUserForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sfGuardUserForm", use another DocBlock to document the file<br>
+<a name="sfGuardUserFormFilter.class.php"></a>
+<h1>sfGuardUserFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sfGuardUserFormFilter", use another DocBlock to document the file<br>
+<a name="sfGuardUserGroup.class.php"></a>
+<h1>sfGuardUserGroup.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardUserGroup", use another DocBlock to document the file<br>
+<a name="sfGuardUserGroupTable.class.php"></a>
+<h1>sfGuardUserGroupTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardUserGroupTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardUserGroupTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardUserPermission.class.php"></a>
+<h1>sfGuardUserPermission.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "sfGuardUserPermission", use another DocBlock to document the file<br>
+<a name="sfGuardUserPermissionTable.class.php"></a>
+<h1>sfGuardUserPermissionTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardUserPermissionTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardUserPermissionTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sfGuardUserTable.class.php"></a>
+<h1>sfGuardUserTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class sfGuardUserTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfDoctrineGuardPlugin\sfGuardUserTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Song.class.php"></a>
+<h1>Song.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "Song", use another DocBlock to document the file<br>
+<a name="SongForm.class.php"></a>
+<h1>SongForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "SongForm", use another DocBlock to document the file<br>
+<a name="SongFormFilter.class.php"></a>
+<h1>SongFormFilter.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "SongFormFilter", use another DocBlock to document the file<br>
+<a name="songGeneratorConfiguration.class.php"></a>
+<h1>songGeneratorConfiguration.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "songGeneratorConfiguration", use another DocBlock to document the file<br>
+<a name="songGeneratorHelper.class.php"></a>
+<h1>songGeneratorHelper.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "songGeneratorHelper", use another DocBlock to document the file<br>
+<a name="SongTable.class.php"></a>
+<h1>SongTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class SongTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\SongTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Tasks.class.php"></a>
+<h1>Tasks.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "Tasks", use another DocBlock to document the file<br>
+<a name="TasksForm.class.php"></a>
+<h1>TasksForm.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "TasksForm", use another DocBlock to document the file<br>
+<a name="TasksTable.class.php"></a>
+<h1>TasksTable.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class TasksTable<br>
+<b>Warning on line 18</b> - File "C:\xampp\htdocs\blues\lib\model\doctrine\sfTodoPlugin\TasksTable.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 03 Nov 2011 17:10:12 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+dev:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=blues'
+      username: redaktor
+      password: tajnehaslo
+

@@ -1,0 +1,32 @@
+sfPhpDoc plugin
+===============
+
+The `sfPhpDocPlugin` is a symfony plugin that provides you with a task to
+generate your sourcecode documentation via PhpDoc.
+
+You still need to install phpdoc before you can use this plugin!
+
+Installation
+------------
+
+  * Install the plugin via the subversion repository.
+
+  * Copy the included phpdoc.ini into your projects config folder.
+
+        $ cp plugins/sfPhpDocPlugin/config/phpdoc.ini config/phpdoc.ini
+
+Configuration
+-------------
+
+  * You can edit the phpdoc.ini using the phpdoc command line options. You can
+    get the options via the phpdoc command.
+
+        $ phpdoc -h
+
+Usage
+-----
+
+  * Execute the task bundled with the plugin. It will generate the documentation
+    in your projects doc directory.
+
+        $ ./symfony generate:phpdoc

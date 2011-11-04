@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Clip
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              a
+    plural:                b
+    route_prefix:          clip
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+
+      fields:
+        show_clip: { label: Videoklip }
+
+      list:
+        display: [ _show_clip ]
+        max_per_page: 5
+
+
+      filter:  ~
+      form:    ~
+
+      edit:
+        display: [ html , _edit_clip , song_id ]
+
+      new:
+        display: [ html , song_id ]
+
+

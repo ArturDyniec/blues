@@ -1,0 +1,22 @@
+;Lines that start with semicolon are comments
+;Semicolon must start the line (it have to be the first character)
+;
+;Every rule have to be correct regular expressions
+;Empty lines are ignored
+;
+;
+
+/^config\/ProjectConfiguration.class\.php$/
+/^cache\//
+/^data\//
+/^nbproject\//
+/^test\//
+/^web\/frontend_dev\.php$/
+/^web\/index\.php$/
+/^web\/backend\.php$/
+/^web\/backend_dev\.php$/
+/^web\/robots\.txt$/
+/^symfony$/
+/^ftp-deploy\.bat$/
+
+/^00-dodatki\//

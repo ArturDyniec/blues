@@ -1,0 +1,4 @@
+all:
+  sf_guard_plugin:
+    success_signin_url:      
+    success_signout_url:     http://blues.gajdaw.pl.localhost

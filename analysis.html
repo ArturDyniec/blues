@@ -1,0 +1,113 @@
+>> sfPatternRouting Connect sfRoute "sf_guard_signin" (/guard/login)
+>> sfPatternRouting Connect sfRoute "sf_guard_signout" (/guard/logout)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+>> sfPatternRouting Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+>> sfPatternRouting Match route "homepage" (/) for / with parameters array (  'module' => 'song',  'action' => 'index',)
+
+<html>
+<head>
+<style>
+body
+{
+  padding: 30px;
+  text-align: left;
+  font-family: Arial;
+}
+
+h1
+{
+  text-align: center;
+}
+</style>
+<link rel="stylesheet" href="web/sfProjectAnalyserPlugin/css/jquery.treeview.css" />
+<script src="web/sfProjectAnalyserPlugin/js/jquery.js"></script>
+<script src="web/sfProjectAnalyserPlugin/js/jquery.treeview.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+        $("#project, #plugins, #summary").treeview({
+            control: "#treecontrol"
+        });
+    });
+</script>
+</head>
+<body>
+<h1><img alt="symfony" style="vertical-align: middle" src="web/sfProjectAnalyserPlugin/images/symfony.png" />sfProjectAnalyserPlugin
+<br/>Analysis of the "blues" project</h1>
+<hr/><ul id="summary" class="treeview-black"><li class="closed"><span class="folder"><strong>Analysis configuration</strong></span><ul>  <li><pre>global:
+  check_functions_docblock: true
+  check_context_get_instance: true
+  check_plugins: true
+  check_compat10: true
+  check_class_docblock: false
+  ignored_objects: { application: {  }, classes: {  }, module: {  }, action: {  }, template: {  }, partial: {  }, layout: {  } }
+project: null
+application: null
+classes:
+  grouping_limit: 10
+module:
+  max_actions_count: 20
+action:
+  max_code_length: 50
+  check_other_actions_call: true
+template:
+  max_code_length: 100
+  check_empty: true
+partial:
+  max_code_length: 50
+  check_empty: true
+layout:
+  max_code_length: 100
+  check_empty: true
+plugin:
+  to_parse: {  }
+  to_ignore: {  }
+  assets_path: web/sfProjectAnalyserPlugin
+</pre></li></ul></ul><hr/><h2>Project blues (symfony 1.4.13) </h2>- Number of applications: <b>2</b><br/>- Applications: <b>backend, frontend</b><br/>- Modules count: <b>7</b><br/>- Actions count: <b>8</b><br/>- Number of analysed plugins: <b>0</b><br/>- Plugins: <b>No plugin parsed: update the 'to_parse' setting in the 'plugin' section</b><br/>- Number of interface(s): <b>0</b><br/>- Number of classe(s): <b>0</b><br/>- Total code length: <b>89</b> line(s)<br/>- Total code length without comments: <b>49</b> line(s)<br/>- Templates total code length: <b>195</b> line(s)<br/><hr/>
+	<div id="treecontrol">
+    <a title="Collapse the entire tree below" href="#"><img src="web/sfProjectAnalyserPlugin/images/minus.gif" />Collapse All</a>
+    <a title="Expand the entire tree below" href="#"><img src="web/sfProjectAnalyserPlugin/images/plus.gif" />Expand All</a>
+    <a title="Toggle the tree below, opening closed branches, closing open branches" href="#">Toggle All</a>
+	</div><ul id="project" class="treeview-black"><li><span class="folder"><strong>Application backend</strong></span><ul><li>It has <b>1</b> layout(s) and <b>0</b> partials</li><li>It has <b>4</b> module(s) (artist, clip, song, tools)</li><li>It has <b>2</b> action(s) in its module(s)</li><li>Total modules code length: <b>26</b> line(s)</li><li>Total modules code length without comments: <b>16</b> line(s)</li><li>Modules Templates total code length: <b>59</b> line(s)</li><li class="closed"><span class="folder">
+            Module <b>artist</b> (admin generator) has <b/>0</b> templates code line(s)</span><br/><ul><li>It has <b>0 template(s)</b> and <b>0 partial(s)</b><br/><br/></li></ul></li><li class="closed"><span class="folder">
+            Module <b>clip</b> (admin generator) has <b/>32</b> templates code line(s)</span><br/><ul><li>It has <b>0 template(s)</b> and <b>2 partial(s)</b><br/><br/></li></ul></li><li class="closed"><span class="folder">
+            Module <b>song</b> (admin generator) has <b/>0</b> templates code line(s)</span><br/><ul><li>It has <b>0 template(s)</b> and <b>0 partial(s)</b><br/><br/></li></ul></li><li class="closed"><span class="folder">
+            Module <b>tools</b> has <b>2 action(s)</b> (autoident, todo) for a total of <b>16</b> code line(s) and <b/>1</b> templates code line(s)</span><br/><ul><li>It has <b>1 template(s)</b> and <b>0 partial(s)</b><br/>Action <b>autoident</b> has 13 code line(s) (code: 100% comments: 0%)<br/>Action <b>todo</b> has 3 code line(s) (code: 100% comments: 0%)<br/><br/></li></ul></li></ul><li><span class="folder"><strong>Application frontend</strong></span><ul><li>It has <b>1</b> layout(s) and <b>0</b> partials</li><li>It has <b>3</b> module(s) (artist, clip, song)</li><li>It has <b>6</b> action(s) in its module(s)</li><li>Total modules code length: <b>63</b> line(s)</li><li>Total modules code length without comments: <b>33</b> line(s)</li><li>Modules Templates total code length: <b>136</b> line(s)</li><li class="closed"><span class="folder">
+            Module <b>artist</b> has <b>2 action(s)</b> (index, show) for a total of <b>11</b> code line(s) and <b/>40</b> templates code line(s)</span><br/><ul><li>It has <b>2 template(s)</b> and <b>0 partial(s)</b><br/>Action <b>index</b> has 6 code line(s) (code: 100% comments: 0%)<br/>Action <b>show</b> has 5 code line(s) (code: 100% comments: 0%)<br/><br/></li></ul></li><li class="closed"><span class="folder">
+            Module <b>clip</b> has <b>2 action(s)</b> (index, show) for a total of <b>11</b> code line(s) and <b/>50</b> templates code line(s)</span><br/><ul><li>It has <b>2 template(s)</b> and <b>1 partial(s)</b><br/>Action <b>index</b> has 6 code line(s) (code: 100% comments: 0%)<br/>Action <b>show</b> has 5 code line(s) (code: 100% comments: 0%)<br/><br/></li></ul></li><li class="closed"><span class="folder">
+            Module <b>song</b> has <b>2 action(s)</b> (index, show) for a total of <b>11</b> code line(s) and <b/>25</b> templates code line(s)</span><br/><ul><li>It has <b>2 template(s)</b> and <b>2 partial(s)</b><br/>Action <b>index</b> has 6 code line(s) (code: 100% comments: 0%)<br/>Action <b>show</b> has 5 code line(s) (code: 100% comments: 0%)<br/><br/></li></ul></li></ul></ul><hr/><ul id="plugins" class="treeview-black"></ul><hr/>
+      <div style="background-color: #60b111; padding: 4px; margin: 3px; border: 1px #ddd solid; font-size: 18px">
+        <div style="float: left"><img alt="ok" style="width: 60%; vertical-align: middle; margin-right: 10px" src="web/sfProjectAnalyserPlugin/images/check.png" /></div>
+        <div style="float: left; margin-top: 7px; text-align: left;">Congratulations ! The project "blues" respects the symfony coding standards of the "default" configuration.</div>
+        <div style="clear: both"></div>
+      </div><br/><ul id="libs" class="treeview-black"><br/> &raquo; Plugin sponsored by <a href="http://www.sqltechnologies.com">SQL-Technologies</a><br /> &raquo; Generated the 2011-11-02 19:04:06 in 0.5812 second(s)</body></html>
