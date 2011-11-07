@@ -1,0 +1,6 @@
+/config/databases.yml
+/config/ftp.ini
+/cache
+/log
+/00-extra
+/nbproject/private/

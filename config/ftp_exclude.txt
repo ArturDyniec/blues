@@ -18,5 +18,9 @@
 /^web\/robots\.txt$/
 /^symfony$/
 /^ftp-deploy\.bat$/
+/^ftp-phpcs\.bat$/
+/^ftp-phpdoc\.bat$/
 
 /^00-dodatki\//
+/^\.git\//
+/^doc\//

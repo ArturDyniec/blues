@@ -4,7 +4,7 @@
 # default rules
 homepage:
   url:   /
-  param: { module: song, action: index }
+  param: { module: artist, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
