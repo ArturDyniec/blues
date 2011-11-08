@@ -15,6 +15,7 @@ abstract class BaseSongFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'title'        => new sfWidgetFormFilterInput(),
       'lyrics'       => new sfWidgetFormFilterInput(),
+      'nothing'      => new sfWidgetFormFilterInput(),
       'slug'         => new sfWidgetFormFilterInput(),
       'artists_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Artist')),
     ));
@@ -22,6 +23,7 @@ abstract class BaseSongFormFilter extends BaseFormFilterDoctrine
     $this->setValidators(array(
       'title'        => new sfValidatorPass(array('required' => false)),
       'lyrics'       => new sfValidatorPass(array('required' => false)),
+      'nothing'      => new sfValidatorPass(array('required' => false)),
       'slug'         => new sfValidatorPass(array('required' => false)),
       'artists_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Artist', 'required' => false)),
     ));
@@ -64,6 +66,7 @@ abstract class BaseSongFormFilter extends BaseFormFilterDoctrine
       'id'           => 'Number',
       'title'        => 'Text',
       'lyrics'       => 'Text',
+      'nothing'      => 'Text',
       'slug'         => 'Text',
       'artists_list' => 'ManyKey',
     );

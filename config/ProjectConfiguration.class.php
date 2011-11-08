@@ -13,7 +13,6 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfDoctrineGuardPlugin');
     $this->enablePlugins('csSecurityTaskExtraPlugin');
     $this->enablePlugins('sfProjectAnalyserPlugin');
-    $this->enablePlugins('sfTodoPlugin');
     $this->enablePlugins('sfPhpDocPlugin');
   }
 }

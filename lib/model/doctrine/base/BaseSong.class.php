@@ -8,17 +8,20 @@
  * @property integer $id
  * @property string $title
  * @property string $lyrics
+ * @property string $nothing
  * @property Doctrine_Collection $artists
  * @property Doctrine_Collection $clips
  * 
  * @method integer             getId()      Returns the current record's "id" value
  * @method string              getTitle()   Returns the current record's "title" value
  * @method string              getLyrics()  Returns the current record's "lyrics" value
+ * @method string              getNothing() Returns the current record's "nothing" value
  * @method Doctrine_Collection getArtists() Returns the current record's "artists" collection
  * @method Doctrine_Collection getClips()   Returns the current record's "clips" collection
  * @method Song                setId()      Sets the current record's "id" value
  * @method Song                setTitle()   Sets the current record's "title" value
  * @method Song                setLyrics()  Sets the current record's "lyrics" value
+ * @method Song                setNothing() Sets the current record's "nothing" value
  * @method Song                setArtists() Sets the current record's "artists" collection
  * @method Song                setClips()   Sets the current record's "clips" collection
  * 
@@ -44,6 +47,10 @@ abstract class BaseSong extends sfDoctrineRecord
         $this->hasColumn('lyrics', 'string', 4096, array(
              'type' => 'string',
              'length' => 4096,
+             ));
+        $this->hasColumn('nothing', 'string', 128, array(
+             'type' => 'string',
+             'length' => 128,
              ));
 
         $this->option('orderBy', 'title');
