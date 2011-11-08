@@ -63,13 +63,6 @@ abstract class BaseClip extends sfDoctrineRecord
              'type' => 'integer',
              ));
 
-
-        $this->index('fk_clip_song', array(
-             'fields' => 
-             array(
-              0 => 'song_id',
-             ),
-             ));
         $this->option('orderBy', 'updated_at DESC, created_at DESC');
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');

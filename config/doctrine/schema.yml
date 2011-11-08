@@ -26,8 +26,7 @@ Song:
       type: string(128)
     lyrics:
       type: string(4096)
-    nothing:
-      type: string(128)
+
       
       
   relations:
@@ -83,9 +82,9 @@ Clip:
       foreignType: many
       type: one
 
-  indexes:
-    fk_clip_song:
-      fields: [song_id]
+#  indexes:
+#    fk_clip_song:
+#      fields: [song_id]
 
 
 
@@ -142,9 +141,9 @@ ArtistSong:
       foreignAlias: artists
       foreignType: many
       type: one
-  indexes:
-    fk_artist_has_song_artist:
-      fields: [artist_id]
-    fk_artist_has_song_song:
-      fields: [song_id]
+#  indexes:
+#    fk_artist_has_song_artist:
+#      fields: [artist_id]
+#    fk_artist_has_song_song:
+#      fields: [song_id]
 

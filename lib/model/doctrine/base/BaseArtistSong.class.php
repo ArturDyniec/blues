@@ -38,19 +38,6 @@ abstract class BaseArtistSong extends sfDoctrineRecord
              'primary' => true,
              ));
 
-
-        $this->index('fk_artist_has_song_artist', array(
-             'fields' => 
-             array(
-              0 => 'artist_id',
-             ),
-             ));
-        $this->index('fk_artist_has_song_song', array(
-             'fields' => 
-             array(
-              0 => 'song_id',
-             ),
-             ));
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');

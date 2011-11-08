@@ -18,7 +18,6 @@ abstract class BaseSongForm extends BaseFormDoctrine
       'id'           => new sfWidgetFormInputHidden(),
       'title'        => new sfWidgetFormInputText(),
       'lyrics'       => new sfWidgetFormTextarea(),
-      'nothing'      => new sfWidgetFormInputText(),
       'slug'         => new sfWidgetFormInputText(),
       'artists_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Artist')),
     ));
@@ -27,7 +26,6 @@ abstract class BaseSongForm extends BaseFormDoctrine
       'id'           => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'title'        => new sfValidatorString(array('max_length' => 128, 'required' => false)),
       'lyrics'       => new sfValidatorString(array('max_length' => 4096, 'required' => false)),
-      'nothing'      => new sfValidatorString(array('max_length' => 128, 'required' => false)),
       'slug'         => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'artists_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Artist', 'required' => false)),
     ));
