@@ -29,6 +29,7 @@ generator:
         display: [ html , _edit_clip , song_id ]
 
       new:
-        display: [ html , song_id ]
+#        display: [ html , song_id ]
+        display: [ html ]
 
 

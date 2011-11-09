@@ -35,7 +35,7 @@ all:
     use_database:           true
 
 
-    enabled_modules: [ sfGuardAuth, sfGuardGroup, sfGuardUser, sfGuardPermission, todo ]
+    enabled_modules: [ default, sfGuardAuth, sfGuardGroup, sfGuardUser, sfGuardPermission ]
 
     login_module:           sfGuardAuth
     login_action:           signin

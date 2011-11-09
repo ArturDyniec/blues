@@ -11,21 +11,14 @@
 /^00-extra\//
 /^cache\//
 /^data\//
+/^config\/doctrine\//
 /^doc\//
 /^lib\/vendor\//
-/^lib\/migration\/doctrine\//
+/^lib\/migration\//
 /^log\//
 /^nbproject\//
 /^test\//
 
-
-/^config\/ProjectConfiguration.class\.php$/
-
-/^web\/backend\.php$/
-/^web\/backend_dev\.php$/
-/^web\/frontend_dev\.php$/
-/^web\/index\.php$/
-/^web\/robots\.txt$/
 
 /^.gitignore$/
 /^ftp-deploy\.bat$/
@@ -34,6 +27,29 @@
 /^run-phpdoc\.bat$/
 /^symfony$/
 /^symfony\.bat$/
+
+
+
+;Folder config/
+
+/^config\/databases\.yml\.dist$/
+/^config\/ftp\.ini$/
+/^config\/ftp\.ini\.dist$/
+/^config\/ftp_exclude\.txt$/
+/^config\/phpdoc\.ini$/
+/^config\/ProjectConfiguration\.class\.php$/
+/^config\/rsync_exclude\.txt$/
+
+
+;Folder web/
+
+/^web\/backend\.php$/
+/^web\/backend_dev\.php$/
+/^web\/frontend_dev\.php$/
+/^web\/index\.php$/
+/^web\/robots\.txt$/
+
+
 
 
 

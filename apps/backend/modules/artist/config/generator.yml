@@ -19,4 +19,5 @@ generator:
       form:    ~
       edit:
         display: [ name, songs_list ]
-      new:     ~
+      new:
+        display: [ name, songs_list ]

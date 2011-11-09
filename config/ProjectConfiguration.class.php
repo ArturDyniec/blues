@@ -1,5 +1,6 @@
 <?php
 
+//require_once 'C:\\xampp\\php\\PEAR\\symfony/autoload/sfCoreAutoload.class.php';
 require_once dirname(__FILE__).'/../lib/vendor/symfony/lib/autoload/sfCoreAutoload.class.php';
 sfCoreAutoload::register();
 
