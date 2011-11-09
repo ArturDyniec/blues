@@ -1,3 +1,12 @@
+<h1>Artists</h1>
+
+<?php include_partial('index', array('pager' => $pager)) ?>
+
+
+<?php
+/*
+
+
 <h1>Artists List</h1>
 
 <table>
@@ -18,3 +27,7 @@
 </table>
 
   <a href="<?php echo url_for('artist/new') ?>">New</a>
+
+
+*/
+?>

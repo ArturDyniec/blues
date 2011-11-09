@@ -4,7 +4,22 @@
 # default rules
 homepage:
   url:   /
+  param: { module: artist, action: index, page: 1}
+
+
+clip_pager:
+  url:   /clips/:page.html
+  param: { module: clip, action: index }
+
+song_pager:
+  url:   /songs/:page.html
+  param: { module: song, action: index }
+
+artist_pager:
+  url:   /artists/:page.html
   param: { module: artist, action: index }
+
+
 
 # generic rules
 # please, remove them by adding more specific rules

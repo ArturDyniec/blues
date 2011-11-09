@@ -34,13 +34,4 @@ class toolsActions extends sfActions
   }
   
   
-  /**
-   * Executes todo action
-   *
-   * @param sfRequest $request A request object
-   */
-  public function executeTodo(sfWebRequest $request)
-  {
-  }
-  
 }

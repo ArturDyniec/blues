@@ -18,9 +18,17 @@ class songActions extends sfActions
    */    
   public function executeIndex(sfWebRequest $request)
   {
+/*
     $this->songs = Doctrine_Core::getTable('Song')
       ->createQuery('a')
       ->execute();
+*/
+
+    $this->pager = new sfDoctrinePager('Song', 10);
+    $this->pager->setQuery(Doctrine_Core::getTable('Song')->createQuery('a'));
+    $this->pager->setPage($request->getParameter('page', 1));
+    $this->pager->init();
+
   }
 
   /**

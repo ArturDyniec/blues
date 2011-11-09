@@ -12,7 +12,7 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [reset.css, style.css, pager.css]
+  stylesheets:    [reset.css, style.css, pager2.css, content.css]
 
   javascripts:    []
 

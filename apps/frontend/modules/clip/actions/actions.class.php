@@ -18,9 +18,17 @@ class clipActions extends sfActions
    */    
   public function executeIndex(sfWebRequest $request)
   {
+/*
     $this->clips = Doctrine_Core::getTable('Clip')
       ->createQuery('a')
       ->execute();
+*/
+
+    $this->pager = new sfDoctrinePager('Clip', 9);
+    $this->pager->setQuery(Doctrine_Core::getTable('Clip')->createQuery('a'));
+    $this->pager->setPage($request->getParameter('page', 1));
+    $this->pager->init();
+
   }
 
   

@@ -1,0 +1,44 @@
+.pager2 {
+    float: left;
+    text-align: right;
+    font-family: "Trebuchet MS", sans-serif;
+/*    font-size: 80%; */
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.pager2 img {
+    border: none;
+    vertical-align: middle;
+}
+
+.pager2 a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+
+}
+
+/*
+.pager2 a:hover {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    background: black;
+    color: white
+}
+*/
+
+
+
+.pager2 strong {
+    border: 1px solid gray;
+    padding: 2px;
+    background: #f0f0f0;
+}
+
+
+.clear {
+    clear: both;
+}

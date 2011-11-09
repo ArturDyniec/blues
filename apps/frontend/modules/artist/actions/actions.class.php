@@ -19,9 +19,17 @@ class artistActions extends sfActions
    */
   public function executeIndex(sfWebRequest $request)
   {
+/*
     $this->artists = Doctrine_Core::getTable('Artist')
       ->createQuery('a')
       ->execute();
+*/
+
+    $this->pager = new sfDoctrinePager('Artist', 10);
+    $this->pager->setQuery(Doctrine_Core::getTable('Artist')->createQuery('a'));
+    $this->pager->setPage($request->getParameter('page', 1));
+    $this->pager->init();
+
   }
 
   /**

@@ -1,5 +1,5 @@
-<h1>Clips List</h1>
+<h1>Clips</h1>
 
 <div>
-<?php include_partial('index', array('clips' => $clips)) ?>
+<?php include_partial('index', array('pager' => $pager)) ?>
 </div>

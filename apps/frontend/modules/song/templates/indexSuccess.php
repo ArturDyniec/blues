@@ -1,4 +1,4 @@
-<h1>Songs List</h1>
+<h1>Songs</h1>
 
-<?php include_partial('index', array('songs' => $songs)) ?>
+<?php include_partial('index', array('pager' => $pager)) ?>
 
