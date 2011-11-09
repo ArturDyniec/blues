@@ -1,0 +1,90 @@
+/*
+ * Pager ver. 0.1
+ * by gajdaw
+ * http://gajdaw.pl
+ *
+ * https://github.com/gajdaw/html5-css-sticky-footer
+ *
+ * Release: public.
+ *
+ */
+
+.pager {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100px;
+    height: 16px;
+    background: url('../images/pager.png') no-repeat 0 0;
+    position: relative;
+}
+    .pager li {
+        width: 20px;
+        height: 16px;
+        position: absolute;
+    }
+        .pager li a {
+            display: block;
+            width: 20px;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            /* opera & safari */
+            text-decoration: none;
+            overflow: hidden;
+        }
+            .pager li a span {
+                display: block;
+                width: 20px;
+                height: 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+    .pager .first {
+        left: 0;
+    }
+        .pager .first span {
+            background: url('../images/pager.png') no-repeat 0 -16px;
+        }
+        .pager .first a:hover span {
+            background: url('../images/pager.png') no-repeat 0 -32px;
+        }
+    .pager .prev {
+        left: 20px;
+    }
+    .pager .prev span {
+        background: url('../images/pager.png') no-repeat -20px -16px;
+    }
+    .pager .prev a:hover span {
+        background: url('../images/pager.png') no-repeat -20px -32px;
+    }
+    .pager .index {
+        left: 40px;
+    }
+    .pager .index span {
+        background: url('../images/pager.png') no-repeat -40px -16px;
+    }
+    .pager .index a:hover span {
+        background: url('../images/pager.png') no-repeat -40px -32px;
+    }
+    .pager .next {
+        left: 60px;
+    }
+    .pager .next span {
+        background: url('../images/pager.png') no-repeat -60px -16px;
+    }
+    .pager .next a:hover span {
+        background: url('../images/pager.png') no-repeat -60px -32px;
+    }
+    .pager .last {
+        left: 80px;
+    }
+    .pager .last span {
+        background: url('../images/pager.png') no-repeat -80px -16px;
+    }
+    .pager .last a:hover span {
+        background: url('../images/pager.png') no-repeat -80px -32px;
+    }

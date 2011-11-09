@@ -7,8 +7,8 @@ body {
     font-family: Georgia, serif;
     font-size: 75%;
     background: #fffad6 url('../images/header-bkg.jpg') repeat-x;
+    line-height: 250%;
 }
-
 
 header {
     display: block;
@@ -24,10 +24,10 @@ header div {
     width: 980px;
     height: 200px;
     margin: 0 auto;
-}
+}    
 
 header h1 {
-    position: absolute;
+    position: absolute;    
     width: 400px;
     height: 200px;
     top: 0;
@@ -35,121 +35,124 @@ header h1 {
 }
 
 header h1 a {
-    position: absolute;
+    position: absolute;    
     display: block;
     width: 400px;
     height: 200px;
     top: 0;
     left: 0;
-}
+}    
 
 header h1 a span {
-    position: absolute;
+    position: absolute;    
     display: block;
     width: 400px;
     height: 200px;
     top: 0;
     left: 0;
     background: url('../images/sprites.jpg') no-repeat 0 0;
-}
+}        
 
 header h1 a:hover span {
     background: url('../images/sprites.jpg') no-repeat 0 -200px;
-}
+}            
 
-header ul {
+header ul {    
     list-style-type: none;
 }
 
-header #o1 {
-    position: absolute;
+header #artists {
+    position: absolute;    
     display: block;
     width: 118px;
     height: 200px;
     top: 0;
     left: 400px;
-}
-header #o1 a {
+}    
+header #artists a {
     position: relative;
     display: block;
     width: 118px;
     height: 200px;
-}
-header #o1 a span {
+}        
+header #artists a span {
     position: absolute;
     display: block;
     width: 118px;
-    height: 200px;
+    height: 200px;    
     top: 0;
     left: 0;
     background: url('../images/sprites.jpg') no-repeat -400px 0;
-}
-header #o1 a:hover span {
+}            
+header #artists a:hover span {
     background: url('../images/sprites.jpg') no-repeat -400px -200px;
-}
+}                
 
 
-header #o2 {
-    position: absolute;
+header #songs {
+    position: absolute;    
     display: block;
     width: 111px;
     height: 200px;
     top: 0;
     left: 518px;
-}
-header #o2 a {
+}    
+header #songs a {
     position: relative;
     display: block;
     width: 118px;
     height: 200px;
-}
-header #o2 a span {
+}        
+header #songs a span {
     position: absolute;
     display: block;
     width: 118px;
-    height: 200px;
+    height: 200px;    
     top: 0;
     left: 0;
     background: url('../images/sprites.jpg') no-repeat -518px 0;
-}
-header #o2 a:hover span {
+}            
+header #songs a:hover span {
     background: url('../images/sprites.jpg') no-repeat -518px -200px;
-}
+}         
 
 
-header #o3 {
-    position: absolute;
+header #clips {
+    position: absolute;    
     display: block;
     width: 105px;
     height: 200px;
     top: 0;
     left: 629px;
-}
-header #o3 a {
+}    
+header #clips a {
     position: relative;
     display: block;
     width: 118px;
     height: 200px;
-}
-header #o3 a span {
+}        
+header #clips a span {
     position: absolute;
     display: block;
     width: 118px;
-    height: 200px;
+    height: 200px;    
     top: 0;
     left: 0;
     background: url('../images/sprites.jpg') no-repeat -623px 0;
-}
-header #o3 a:hover span {
+}            
+header #clips a:hover span {
     background: url('../images/sprites.jpg') no-repeat -623px -200px;
-}
-
-
+}             
 
 #content {
     width: 980px;
     min-height: 100%;
     margin: 0 auto -200px auto;
+    background: url('../images/footer-bkg.jpg') repeat-x bottom center;
+}
+
+#content p {
+    line-height: 250%;
 }
 
 #content .text {
@@ -160,19 +163,19 @@ header #o3 a:hover span {
 
 #content .push {
     height: 200px;
-    border: 1px solid red;
+/*     border: 1px solid red; */
 }
 
 footer {
     height: 200px;
-    width: 100%;
+    min-width: 100%;
     background: url('../images/footer-bkg.jpg') repeat-x;
     position: relative;
 }
 
 footer div {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     bottom: 50px;
     text-align: center;
 }

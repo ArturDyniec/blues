@@ -24,9 +24,9 @@
     <h1><a href="<?php echo url_for('@homepage') ?>">Blues<span></span></a></h1>
     <nav>
         <ul>
-            <li id="o1"><a href="<?php echo url_for('artist/index') ?>">artist<span></span></a></li>
-            <li id="o2"><a href="<?php echo url_for('song/index') ?>">songs<span></span></a></li>
-            <li id="o3"><a href="<?php echo url_for('clip/index') ?>">clips<span></span></a></li>
+            <li id="artists"><a href="<?php echo url_for('artist/index') ?>">artists<span></span></a></li>
+            <li id="songs"><a href="<?php echo url_for('song/index') ?>">songs<span></span></a></li>
+            <li id="clips"><a href="<?php echo url_for('clip/index') ?>">clips<span></span></a></li>
         </ul>
     </nav>
   </div>      
@@ -35,7 +35,7 @@
 
 <footer>
     <div>
-        &copy;2011 by <a href="http://gajdaw.pl">gajdaw</a> <br/>
+        &copy;2011 by <a href="http://gajdaw.pl">gajdaw</a> <br/><br />
         <a href="<?php echo public_path('backend.php') ?>">admin</a>
     </div>
 </footer>
