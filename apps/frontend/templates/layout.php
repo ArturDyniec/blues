@@ -21,7 +21,7 @@
 
 <header>
   <div>
-    <h1><a href="<?php echo url_for('@homepage') ?>">Blues<span></span></a></h1>
+    <h1><a href="<?php echo url_for('@homepage') ?>"><img src="<?php echo public_path('images/blues-off.jpg') ?>" alt="Blues" /><span>Blues</span></a></h1>
     <nav>
         <ul>
             <li id="artists"><a href="<?php echo url_for('artist/index') ?>">artists<span></span></a></li>

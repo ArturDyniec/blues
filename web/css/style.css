@@ -51,11 +51,24 @@ header h1 a span {
     top: 0;
     left: 0;
     background: url('../images/sprites.jpg') no-repeat 0 0;
+    z-index: 5;
+    text-indent: -2000em;
 }        
 
 header h1 a:hover span {
     background: url('../images/sprites.jpg') no-repeat 0 -200px;
 }            
+
+header h1 a:hover img {
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 
 header ul {    
     list-style-type: none;
