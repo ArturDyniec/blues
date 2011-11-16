@@ -1,8 +1,3 @@
-<table>
-  <tbody>
-    <tr>
-      <th>Name:</th>
-      <td><?php echo $artist->getName() ?></td>
-    </tr>
-  </tbody>
-</table>
+<h1><?php echo $artist->getName() ?></h1>
+
+<?php include_partial('song/index_without_pager', array('songs' => $artist->getSongs())) ?>

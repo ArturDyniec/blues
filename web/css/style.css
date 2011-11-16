@@ -31,7 +31,7 @@ header h1 {
     width: 400px;
     height: 200px;
     top: 0;
-    left: 0;
+    left: -50px;
 }
 
 header h1 a {
@@ -67,7 +67,7 @@ header #artists {
     width: 118px;
     height: 200px;
     top: 0;
-    left: 400px;
+    left: 660px;
 }    
 header #artists a {
     position: relative;
@@ -95,7 +95,7 @@ header #songs {
     width: 111px;
     height: 200px;
     top: 0;
-    left: 518px;
+    left: 780px;
 }    
 header #songs a {
     position: relative;
@@ -123,7 +123,7 @@ header #clips {
     width: 105px;
     height: 200px;
     top: 0;
-    left: 629px;
+    left: 880px;
 }    
 header #clips a {
     position: relative;
@@ -147,8 +147,9 @@ header #clips a:hover span {
 #content {
     width: 980px;
     min-height: 100%;
-    margin: 0 auto -200px auto;
+    margin: 40px auto -200px auto;
     background: url('../images/footer-bkg.jpg') repeat-x bottom center;
+/*    border: 1px solid red; */
 }
 
 #content p {

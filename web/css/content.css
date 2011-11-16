@@ -16,5 +16,29 @@
 }
 
 #content h1 {
-    text-align: center;
+    font-size: 150%
+}
+
+#content h2 {
+    font-size: 140%
+}
+
+#content .lyrics {
+    margin-top: 50px;
+}
+
+#content .columns2 {
+
+}
+
+
+#content .columns2 .left {
+    width: 48%;
+    float: left;
+}
+
+#content .columns2 .right {
+    width: 400px;
+    float: right;
+    text-align: right;
 }
