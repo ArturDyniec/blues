@@ -36,7 +36,7 @@
 <footer>
     <div>
         &copy;2011 by <a href="http://gajdaw.pl">gajdaw</a> <br/><br />
-        <a href="<?php echo public_path('backend.php') ?>">admin</a>
+        <!--  <a href="<?php echo public_path('backend.php') ?>">admin</a>  -->
     </div>
 </footer>
 

@@ -6,6 +6,11 @@ prod:
     no_script_name:         true
     logging_enabled:        false
 
+staging:
+  .settings:
+    no_script_name:         true
+
+
 dev:
   .settings:
     error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
